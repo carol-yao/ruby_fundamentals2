@@ -32,3 +32,21 @@ students.delete(:cohort2)
 display(students)
 
 # 7 : BONUS
+# array of values from students hash
+student_totals = students.values
+
+# using .inject
+def total_students(values)
+  values.inject do |sum, value|
+    sum + value
+  end
+end
+
+puts total_students(student_totals)
+
+# using .each method
+total = 0
+student_totals.each do |student|
+  total += student
+end
+puts total
