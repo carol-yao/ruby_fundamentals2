@@ -19,3 +19,10 @@ students[:cohort4] = 43
 
 # 4
 puts students.keys
+
+# 5
+students.each do |key, value|
+  students[key] = value + (value * 0.05)
+end
+
+display(students)
