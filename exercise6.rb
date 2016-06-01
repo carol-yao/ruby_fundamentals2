@@ -20,3 +20,7 @@ end
 puts "The second item in the list is #{grocery_list[1]}."
 
 output_list(grocery_list.sort)
+
+grocery_list.delete("salmon")
+
+output_list(grocery_list.sort)
