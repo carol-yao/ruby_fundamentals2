@@ -11,3 +11,7 @@ def display(hash)
 end
 
 display(students)
+
+students[:cohort4] = 43
+
+puts students
