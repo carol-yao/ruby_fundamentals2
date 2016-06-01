@@ -22,7 +22,7 @@ puts students.keys
 
 # 5
 students.each do |key, value|
-  students[key] = value + (value * 0.05)
+  students[key] = value + (value * 0.05).round
 end
 
 display(students)
@@ -30,3 +30,5 @@ display(students)
 # 6
 students.delete(:cohort2)
 display(students)
+
+# 7 : BONUS
